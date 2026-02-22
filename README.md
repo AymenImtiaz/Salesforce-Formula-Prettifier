@@ -12,6 +12,12 @@ Formula fields in Salesforce can become complex and difficult to read, especiall
   - **Select Mode**: Choose an object and field from dropdowns
   - **Paste Mode**: Copy and paste any formula directly
 
+## What's New
+
+📋 **[View Release Notes](/Release%20Notes.md)** for detailed information about features and improvements in each version.
+
+**Latest (v0.3.0):** Refresh button, enhanced evaluation feedback with contextual help, and UI improvements.
+
 ## Security & Permissions
 
 This tool respects Salesforce security:
@@ -22,7 +28,7 @@ The tool uses Salesforce's built-in security enforcement to ensure you only acce
 
 ## Installation
 
-Open the [Installation Link](https://linkly.link/2HjLA), login to your org and follow the installation wizard to add this tool to your Salesforce org. Replace 'login.salesforce.com' with 'test.salesforce.com' for sandboxes. 
+This app can be installed directly from the [AppExchange](https://appexchange.salesforce.com/appxListingDetail?listingId=6c82b00e-c028-43dc-b678-9f7c864dbde9)
 
 ## How to Use
 
@@ -38,14 +44,12 @@ Open the [Installation Link](https://linkly.link/2HjLA), login to your org and f
 
 #### Select Mode (Default)
 1. Click the **floating action button** on your record page
-2. Choose **Select Formula Field** mode
-3. Select an **Object** from the dropdown
-4. Select a **Formula Field** from the dropdown
-5. The prettified formula appears automatically
+2. Select an **Object** from the dropdown
+3. Select a **Formula Field** from the dropdown
+4. The prettified formula appears automatically
 
 #### Paste Mode
-1. Click the **floating action button**
-2. Toggle to **Paste** mode
+1. Toggle to **Paste** mode
 3. Paste your formula into the text area
 4. Click **Prettify Formula**
 5. View the formatted result
@@ -61,7 +65,7 @@ Open the [Installation Link](https://linkly.link/2HjLA), login to your org and f
 - **Yellow**: Punctuation
 
 **Interactive Features:**
-- **Hover** over any token to see its details
+- **Hover** over any token to see its value
 - **Click on brackets** to highlight matching pairs
 - **View field setup** by clicking the setup icon (when in Select mode)
 
@@ -72,35 +76,33 @@ When viewing a formula on a record page:
 
 ## Features
 
-✅ Clean, readable formula formatting
-✅ Real-time formula evaluation on records
-✅ Support for all standard Salesforce formula functions
-✅ Object and field-level security enforcement
-✅ Works with custom and standard objects
-✅ Syntax highlighting for easy reading
-✅ Bracket matching for nested functions
+- ✨ Clean, readable formula formatting
+- 🧠 Real-time formula and field evaluation on records
+- 🔐 Security-aware evaluation
+- 🔎 Bracket matching for nested functions
+- 🎯 Supports all standard Salesforce formula functions
+- 🧩 Works across standard & custom objects
+- 📂 Collapsible logic blocks for easy navigation
+- ☁️ 100% Salesforce-native solution
 
 ## Limitations
 
-- **Trial Period**: This package expires on December 1, 2025
 - **Formula Fields Only**: Only works with formula fields, not roll-up summaries
 - **Record Context**: Formula evaluation requires being on a record page
 
 ## Troubleshooting
 
-### "Package Expired"
-The trial version expires on December 1, 2025. Contact support for a license extension.
-
-### Formula Won't Evaluate
+### Unable to evaluate formula
 Make sure:
-- You're on a record page
-- The selected object matches the record type you're viewing
+- You're on the right record page
 - You have access to all fields used in the formula
 
-### No Objects Showing in Dropdown
+### No objects showing in the dropdown
 This means:
-- There are no accessible formula fields in your org, OR
-- Your user profile doesn't have permission to view any formula fields
+- Your user doesn't have permission to view any formula fields
+
+### Evaluation Result is not as expected
+Formula is evaluated considering the 'Treat blank fields as' setting configured in the prettifier window. If you think the result is not as expected, make sure that setting is configured correctly.
 
 ## Privacy
 
@@ -110,11 +112,6 @@ This tool:
 - Operates entirely within Salesforce security boundaries
 - Respects all sharing rules and permissions
 
-## Version Information
-
-- **Current Version**: .1.0-1 (Beta package)
-- **Expiration**: December 1, 2025
-
 ## Credits
 
-Developed with 💜 for the Salesforce Community.
+Designed and developed by [Aymen Imtiaz](https://www.linkedin.com/in/aymen-imtiaz-salesforce-developer/) with 💜 for the Salesforce Community.
